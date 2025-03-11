@@ -1,0 +1,18 @@
+A software development firm is hiring engineers and used the following challenge in its online test.
+Given an array arr that contains n integers, the following operation can be performed on it any number of times (possibly zero)
+Choose any Index i(0 <= i < n-1) and swap arr[i] and arr[i+1]
+
+Each element of the array can be swapped at must once during the whole process
+
+The strength of an index is defined as (arr[i]*(i+1)), using 0-based indexing. Find the maximum possible sum of the strength of all indices after optimal swaps. Mathematically, maximize the following.
+
+Example
+Consider n = 4, arr = [2, 1, 4, 3]
+
+It is optimal to swap (arr[2], arr[3]) and (arr[0], arr[1]). The final array is [1, 2, 3, 4]. The sum of strengths = (1*1+2*2+3*3 +4* 4) = 30, which is maximum possible. Thus, the answer is 30.
+Function Description
+
+Complete the function getMaximumSumOfStrengths in the editor below.
+
+getMaximumSumOfStrengths has the following parameter: int arr[n]: the initial array
+

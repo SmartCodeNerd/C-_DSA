@@ -1,0 +1,106 @@
+---Pseudocodes---
+input n
+i=1
+sum=0
+while i<n
+  sum+=i
+  i+=1
+print sum
+
+input length, breadth
+area=length*breadth
+print area
+
+input a, b, c
+sum=a+ b+ c
+avg=sum/3
+print avg
+
+
+input a, b, c
+if a>b
+  if a>c
+	print a
+  else 
+	print c
+else 
+  if b>c
+	print b
+  else 
+	print c
+
+input n
+while n>0
+  n-=2
+if n == 0
+	print even
+else
+	print odd
+
+i=10
+while i<=50
+	if i%3==0
+		print i
+	i+=1
+
+-for an executable file the extension for windows is .exe and for mac users it is .out
+
+-preprocessor directives-they are some statements that are given to the compiler that it has to perform before(pre) processing.
+
+-like #include<iostream> is a preprocessor directive that tells the compiler to include a header file named iostream before processing.
+
+-all preprocessor directives are start with # symbol
+
+-macros(symbolic constants)-they are also preprocessor directives.
+#define PI 3.14
+this fixed the value of PI as 3.14 in the whole program.
+
+-main function is the starting point of the code execution.
+
+-functions like cout and cin are defined under the header file iostream but they are declared under the namespace std(standard).like the physical land space are somewhere else but its registry is done somewhere else.Presence of physical land space means defining it but its registry means it is declared there.Hence it will avoid the confusion of conflict ,if there are multiple function with the same function name under different header files...but using its namespace we can easily reduce the conflict.
+
+-to use the functions like cout and cin we have to write its namespace before it...like std::cin or std::cout 
+-; is a statement terminator
+
+-variables are just like containers that are used to store values
+-variable names are known as idenfiers
+-variable names should be meaningful
+-variable are stored in RAM which volatile in nature
+
+-in case of Boolean datatype
+-true -> 1 
+-false -> 0
+
+-precision of float datatype is upto 7 decimal digits and precision of double datatype is upto 15 decimal digits
+
+-constant variable-these are those types of variables whose value cannot be changed
+
+-the main difference between macros(symbolic constants) and constant variables are that macros do not occupy any space in the memory...they are just a symbolic constants which are replaced by the constant value at the place where the variable is used......but in case of constant variable a space is allocated to the variable just like the regular case.
+
+-implicit typecasting: automatically done by the compiler in a hierarchical order 
+i.e.; bool->char->int->float->double
+hence during an operation between two or more different datatypes,the other are converted implicitly by the compiler to the datatype having highest priority.
+
+-explicit typecasting: forced by the programmer
+
+-unary operators are of two types:- pre and post
+-in case of pre, updation is done first and then the value is used
+-but in case of post the value is used first and then the value is updated
+
+-------------------------conditional statements--------------------
+any non-zero value -> true
+zero -> false
+if there is any non-zero value in case of condition then it is considered as true and vice-versa
+
+-ternary operator is a compact form of if-else statements
+-ex-)
+isAdult=(age>=18)?true:false;
+
+--------------------------------loops-------------------------------------
+any situation that can be solved using loops can be done using for as well as while and as well as do-while loops.
+for loops is used when the number of iterations is known to us, but while loops is used when the number of iterations is not known to us.
+-in case of do while loops the 	work gets done atleast once irrespective of the condition.
+-break statement is used to exit any loop
+-continue statement is used to skip an iteration.
+
+
